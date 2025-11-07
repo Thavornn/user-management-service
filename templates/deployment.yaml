@@ -34,5 +34,10 @@ spec:
                   key: password
             - name: SPRING_SECURITY_OAUTH2_RESOURCESERVER_JWT_ISSUER_URI
               value: "https://keycloak.hrdportal.systems/realms/hrd-portal"
+
+            - name: SPRING_CLOUD_OPENFEIGN_CLIENT_CONFIG_AUTHSERVICE_URL
+              value: "http://auth-service.hrd-portal.svc.cluster.local:8084"
+            - name: SPRING_CLOUD_OPENFEIGN_CLIENT_CONFIG_CLASSROOMSERVICE_URL
+              value: "http://classroom-service.hrd-portal.svc.cluster.local:8082"
             - name: SPRING_PROFILES_ACTIVE
               value: "prod"
