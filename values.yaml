@@ -1,0 +1,11 @@
+replicaCount: 1
+
+image:
+  repository: "pinkmelon/user-management-service"
+  tag: "8"
+
+service:
+  type: LoadBalancer
+  port: 8083
+
+revisionHistoryLimit: 3
