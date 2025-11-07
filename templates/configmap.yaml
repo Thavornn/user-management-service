@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: user-management-config
+  namespace: hrd-portal
+data:
+  SPRING_SECURITY_OAUTH2_RESOURCESERVER_JWT_ISSUER_URI: "https://keycloak.hrdportal.systems/realms/hrd-portal"
+  SPRING_CLOUD_OPENFEIGN_CLIENT_CONFIG_AUTHSERVICE_URL: "http://auth-service.hrd-portal.svc.cluster.local:8084"
+  SPRING_CLOUD_OPENFEIGN_CLIENT_CONFIG_CLASSROOMSERVICE_URL: "http://classroom-service.hrd-portal.svc.cluster.local:8082"
+  SPRING_PROFILES_ACTIVE: "prod"
+
+  EUREKA_CLIENT_REGISTER_WITH_EUREKA: "false"
+  EUREKA_CLIENT_FETCH_REGISTRY: "false"
