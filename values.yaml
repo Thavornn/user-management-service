@@ -2,7 +2,7 @@ replicaCount: 1
 
 image:
   repository: "pinkmelon/user-management-service"
-  tag: 28
+  tag: 34
 
 service:
   type: LoadBalancer
