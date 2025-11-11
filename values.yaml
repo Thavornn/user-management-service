@@ -8,4 +8,4 @@ service:
   type: LoadBalancer
   port: 8083
 
-revisionHistoryLimit: 3
+revisionHistoryLimit: 2
