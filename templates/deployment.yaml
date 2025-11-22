@@ -25,7 +25,7 @@ spec:
                 name: user-management-config
           env:
             - name: SPRING_DATASOURCE_URL
-              value: "jdbc:postgresql://128.199.251.237:5435/user_db"
+              value: "jdbc:postgresql://96.9.81.188:5435/user_db"
             - name: SPRING_DATASOURCE_USERNAME
               valueFrom:
                 secretKeyRef:
