@@ -2,7 +2,7 @@ replicaCount: 1
 
 image:
   repository: "pinkmelon/user-management-service"
-  tag: 54
+  tag: 55
 
 service:
   type: NodePort
